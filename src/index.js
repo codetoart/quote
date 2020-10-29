@@ -212,7 +212,7 @@ class Quote {
     caption.dataset.placeholder = this.captionPlaceholder;
 
     container.appendChild(quote);
-    container.appendChild(caption);
+    // container.appendChild(caption);
 
     return container;
   }
@@ -225,11 +225,11 @@ class Quote {
    */
   save(quoteElement) {
     const text = quoteElement.querySelector(`.${this.CSS.text}`);
-    const caption = quoteElement.querySelector(`.${this.CSS.caption}`);
+    // const caption = quoteElement.querySelector(`.${this.CSS.caption}`);
 
     return Object.assign(this.data, {
       text: text.innerHTML,
-      caption: caption.innerHTML,
+      // caption: caption.innerHTML,
     });
   }
 
